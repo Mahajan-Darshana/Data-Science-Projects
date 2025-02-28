@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="img"></div>
+    <div class="container">
+        <form class="form" id="priceForm">
+            <h1>🏡 Bangalore Home Price Prediction</h1>
+
+            <h2>Area (Square Feet)</h2>
+            <input class="input-field" type="text" id="uiSqft" name="Squareft" placeholder="Enter area in sqft">
+
+            <h2>BHK</h2>
+            <select id="uiBHK" class="input-field">
+                <option value="" disabled selected>Select BHK</option>
+                <option value="1">1 BHK</option>
+                <option value="2">2 BHK</option>
+                <option value="3">3 BHK</option>
+                <option value="4">4 BHK</option>
+                <option value="5">5 BHK</option>
+                <option value="6">6 BHK</option>
+            </select>
+
+            <h2>Bathrooms</h2>
+            <select id="uiBathrooms" class="input-field">
+                <option value="" disabled selected>Select Bathrooms</option>
+                <option value="1">1 Bathroom</option>
+                <option value="2">2 Bathrooms</option>
+                <option value="3">3 Bathrooms</option>
+                <option value="4">4 Bathrooms</option>
+                <option value="5">5 Bathrooms</option>
+                <option value="6">6 Bathrooms</option>
+            </select>
+
+            <h2>Location</h2>
+            <select id="uiLocations" class="input-field">
+                <option value="" disabled selected>Choose a Location</option>
+            </select>
+
+            <button class="submit-btn" id="estimatePriceBtn" type="button">Estimate Price</button>
+
+            <div id="loading" class="loading">🔄 Calculating...</div>
+
+            <div id="uiEstimatedPrice" class="result-box"><h2>Estimated Price: ₹ --</h2></div>
+        </form>
+    </div>
+</body>
+</html>
