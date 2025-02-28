@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.img {
+    background: url('https://plus.unsplash.com/premium_photo-1680721445448-33ed9d682c3a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2luZ3xlbnwwfHwwfHx8MA%3D%3D');
+    background-size: contain; /* Keep "contain" to show the whole image */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    filter: blur(4px); 
+    position: fixed;
+    width: 100%; /* Ensure full width */
+    height: 100%; /* Ensure full height */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+/* Centering form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 350px;
+    width: 90%;
+}
+
+/* Headings */
+h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #f9f9f9;
+    transition: 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Button */
+.submit-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #218838;
+}
+
+/* Loading Animation */
+.loading {
+    display: none;
+    font-size: 14px;
+    margin: 15px 0;
+    color: #333;
+}
+
+/* Estimated Price Box */
+.result-box {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
